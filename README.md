@@ -1,4 +1,4 @@
-<h1 align="center">Mer 👋, I'm Sinan</h1>
+<h1 align="center">Hi 👋, I'm Sinan</h1>
 <h3 align="center">Backend developer ,Software engineer student</h3>
 
 - 📫 How to reach me **msinansonmez10@gmail.com**
