@@ -1,25 +1,25 @@
-<h1 align="center">Selamlar, ben Sinan 👋</h1>
-<h3 align="center">Backend Developer | Yazılım Mühendisliği Öğrencisi</h3>
+<h1 align="center">Hi there, I'm Sinan 👋</h1>
+<h3 align="center">Backend Developer | Software Engineering Student</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Focus-Backend_Development-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Student-Software_Engineering-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Focus-Backend_Architecture-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Tech-Java_&_Spring-green?style=for-the-badge">
 </p>
 
 <p align="center">
-  Mimariyi temiz, API'yi hızlı, veritabanını sağlam kurmaya odaklanmış bir backend tutkunuyum. 
-  Şu sıralar ölçeklenebilir sistemler ve mikroservis mimarileri üzerine kafa yoruyorum.
+  Passionate Backend Developer focused on building scalable, high-performance systems. 
+  Dedicated to writing clean, maintainable code and designing robust database architectures.
 </p>
 
 <hr />
 
-### 🚀 Nelerle Uğraşıyorum?
-- 🛠️ **Backend:** Java & Spring Boot ekosisteminde sağlam temeller atıyorum.
-- 🏗️ **Mimari:** Clean Architecture ve RESTful prensiplerini projelerime rehber ediniyorum.
-- 🗄️ **Veri:** PostgreSQL ile veriyi yönetmeyi, optimize etmeyi seviyorum.
-- 🌐 **Full-stack:** Gerektiğinde Vue.js ile arayüze dokunmaktan çekinmem.
+### 🚀 About Me
+- 🛠️ **Backend:** Deep diving into Java and the **Spring Ecosystem** and **Nest.js**.
+- 🏗️ **Architecture:** Applying **Clean Architecture** and **RESTful** principles to every project.
+- 🗄️ **Data:** Crafting optimized queries and schemas using **PostgreSQL**.
+- 🎓 **Education:** Currently pursuing a degree in Software Engineering, bridging academic theory with practical implementation.
 
-### 🛠️ Kullandığım Araçlar ve Teknolojiler
+### 🛠️ Languages & Tools
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" width="40" height="40" />
   <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Spring" width="40" height="40" />
@@ -35,7 +35,7 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker" width="40" height="40" />
 </p>
 
-### 📈 GitHub İstatistiklerim
+### 📊 GitHub Activity
 <p align="left">
 <img align="left" src="https://github-readme-stats.vercel.app/api?username=msinansonmez&show_icons=true&theme=tokyonight" alt="Sinan's Stats" height="150" />
 <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=msinansonmez&layout=compact&theme=tokyonight" alt="Top Langs" height="150" />
@@ -43,7 +43,7 @@
 
 <br clear="both" />
 
-### 📫 Bana Ulaş
+### 📫 Get in Touch
 <p align="left">
 <a href="https://linkedin.com/in/msinansonmez" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="msinansonmez" height="30" width="40" /></a>
 <a href="https://instagram.com/s1nansnmz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="s1nansnmz" height="30" width="40" /></a>
