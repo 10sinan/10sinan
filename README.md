@@ -15,8 +15,8 @@
 - 👯 I’m looking to collaborate on **Open source backend projects or scalable microservices**
 - 💬 Ask me about **NestJS, Spring Boot, PostgreSQL and Backend Logic**
 - 📫 How to reach me: **msinansonmez10@gmail.com**
-- 📄 Know about my experiences: [LinkedIn Profile](https://www.linkedin.com/in/msinansonmez/)
-- ⚡ Fun fact: **Powered by caffeine and clean code**
+- 📄 Know about my experiences: [LinkedIn](https://www.linkedin.com/in/msinansonmez/)
+- ⚡ **Powered by caffeine and clean code**
 
 <p align="center">
   <a href="https://www.linkedin.com/in/msinansonmez/" target="_blank">
