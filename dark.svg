@@ -1,91 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="100%" height="100%">
   <defs>
-    <!-- Background Noise - Azaltılmış Parazit -->
-    <filter id="noise">
-      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
-      <feColorMatrix type="matrix" values="1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.03 0" />
-    </filter>
-
     <!-- Glassmorphism Filter -->
     <filter id="glass" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="15" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
-    <!-- Monokrom (Gümüş/Beyaz/Gri) Gradient -->
+    <!-- Native GitHub Gradient -->
     <linearGradient id="mono-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF">
-        <animate attributeName="stop-color" values="#FFFFFF;#71717A;#E4E4E7;#FFFFFF" dur="8s" repeatCount="indefinite" />
+        <animate attributeName="stop-color" values="#FFFFFF;#8B949E;#C9D1D9;#FFFFFF" dur="8s" repeatCount="indefinite" />
       </stop>
-      <stop offset="50%" stop-color="#A1A1AA">
-        <animate attributeName="stop-color" values="#A1A1AA;#FFFFFF;#71717A;#A1A1AA" dur="8s" repeatCount="indefinite" />
+      <stop offset="50%" stop-color="#8B949E">
+        <animate attributeName="stop-color" values="#8B949E;#FFFFFF;#8B949E;#8B949E" dur="8s" repeatCount="indefinite" />
       </stop>
-      <stop offset="100%" stop-color="#D4D4D8">
-        <animate attributeName="stop-color" values="#D4D4D8;#A1A1AA;#FFFFFF;#D4D4D8" dur="8s" repeatCount="indefinite" />
+      <stop offset="100%" stop-color="#C9D1D9">
+        <animate attributeName="stop-color" values="#C9D1D9;#8B949E;#FFFFFF;#C9D1D9" dur="8s" repeatCount="indefinite" />
       </stop>
     </linearGradient>
 
-    <!-- Çok hafif beyaz arka plan parlaması -->
-    <radialGradient id="bg-glow1" cx="20%" cy="30%" r="50%">
-      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.04)" />
+    <!-- Arka plan ince parlama -->
+    <radialGradient id="bg-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.03)" />
       <stop offset="100%" stop-color="rgba(0, 0, 0, 0)" />
     </radialGradient>
-    <radialGradient id="bg-glow2" cx="80%" cy="70%" r="50%">
-      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.04)" />
-      <stop offset="100%" stop-color="rgba(0, 0, 0, 0)" />
-    </radialGradient>
-
-    <!-- Typing Clip Paths -->
-    <clipPath id="typing-clip">
-      <rect x="0" y="0" width="0" height="40">
-        <animate attributeName="width" values="0;250;250" keyTimes="0;0.5;1" dur="4s" repeatCount="indefinite" />
-      </rect>
-    </clipPath>
   </defs>
 
-  <!-- Background Canvas -->
-  <rect width="1180" height="610" rx="24" fill="#000000" />
+  <!-- GitHub Native Dark Background -->
+  <rect width="1180" height="610" rx="24" fill="#0D1117" />
   
-  <!-- Floating Radial Gradients -->
-  <circle cx="20%" cy="30%" r="400" fill="url(#bg-glow1)">
-    <animate attributeName="cx" values="20%;25%;20%" dur="10s" repeatCount="indefinite" />
-  </circle>
-  <circle cx="80%" cy="70%" r="400" fill="url(#bg-glow2)">
-    <animate attributeName="cy" values="70%;65%;70%" dur="12s" repeatCount="indefinite" />
+  <circle cx="50%" cy="50%" r="500" fill="url(#bg-glow)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="8s" repeatCount="indefinite" />
   </circle>
 
-  <!-- Noise Overlay -->
-  <rect width="1180" height="610" rx="24" style="pointer-events:none;" fill="url(#noise)" />
+  <!-- Dış Çerçeve -->
+  <rect width="1178" height="608" x="1" y="1" rx="24" fill="none" stroke="#30363D" stroke-width="2" />
 
-  <!-- Shimmering Border -->
-  <rect width="1178" height="608" x="1" y="1" rx="24" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="2" />
-  <rect width="1178" height="608" x="1" y="1" rx="24" fill="none" stroke="url(#mono-gradient)" stroke-width="1" opacity="0.4">
-    <animate attributeName="opacity" values="0.1;0.6;0.1" dur="5s" repeatCount="indefinite" />
-  </rect>
-
-  <!-- ======================== LEFT SIDE (ASCII CLAUDE) ======================== -->
+  <!-- ======================== LEFT SIDE (ASCII S LOGO) ======================== -->
   <g transform="translate(60, 100)">
     <!-- Floating Animation -->
-    <animateTransform attributeName="transform" type="translate" values="60,100; 60,94; 60,100" dur="8s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" values="60,100; 60,94; 60,100" dur="6s" repeatCount="indefinite" />
     
-    <rect width="400" height="420" rx="16" fill="#09090B" fill-opacity="0.8" stroke="rgba(255,255,255,0.06)" filter="url(#glass)" />
+    <rect width="400" height="420" rx="16" fill="#161B22" fill-opacity="0.9" stroke="#30363D" filter="url(#glass)" />
     
-    <!-- Anthropic / Claude ASCII Art (Büyütülmüş ve Ortalanmış) -->
-    <g font-family="Consolas, 'SF Mono', monospace" font-size="24" fill="url(#mono-gradient)" xml:space="preserve">
-      <text x="75" y="75">
-        <tspan x="75" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.0s" fill="freeze" />        /\        </tspan>
-        <tspan x="75" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.1s" fill="freeze" />       /  \       </tspan>
-        <tspan x="75" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.2s" fill="freeze" />      /    \      </tspan>
-        <tspan x="75" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.3s" fill="freeze" />     /      \     </tspan>
-        <tspan x="75" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.4s" fill="freeze" />    /        \    </tspan>
-        <tspan x="75" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.5s" fill="freeze" />   /   ____   \   </tspan>
-        <tspan x="75" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.6s" fill="freeze" />  /   /    \   \  </tspan>
-        <tspan x="75" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.7s" fill="freeze" /> /   /      \   \ </tspan>
-        <tspan x="75" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.8s" fill="freeze" />/___/        \___\</tspan>
+    <!-- Özel Tasarım 'S' ASCII Art (Bölünemez Boşluklar İle Çivilenmiş) -->
+    <g font-family="Consolas, 'SF Mono', monospace" font-size="24" fill="url(#mono-gradient)">
+      <text x="80" y="75">
+        <tspan x="80" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.0s" fill="freeze" />&#160;&#160;&#160;&#160;________</tspan>
+        <tspan x="80" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.1s" fill="freeze" />&#160;&#160;&#160;/&#160;&#160;_____/</tspan>
+        <tspan x="80" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.2s" fill="freeze" />&#160;&#160;/&#160;&#160;/</tspan>
+        <tspan x="80" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.3s" fill="freeze" />&#160;/&#160;&#160;/</tspan>
+        <tspan x="80" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.4s" fill="freeze" />/&#160;&#160;\______</tspan>
+        <tspan x="80" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.5s" fill="freeze" />\_______&#160;&#160;\</tspan>
+        <tspan x="80" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.6s" fill="freeze" />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\&#160;&#160;\</tspan>
+        <tspan x="80" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.7s" fill="freeze" />&#160;_______/&#160;&#160;/</tspan>
+        <tspan x="80" dy="28" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="5s" begin="0.8s" fill="freeze" />/_________/</tspan>
       </text>
     </g>
 
-    <!-- Scanline (Siyah/Beyaz uyumlu gri) -->
+    <!-- Tarama Çizgisi -->
     <rect width="400" height="4" fill="rgba(255, 255, 255, 0.1)" opacity="0.5">
       <animate attributeName="y" values="0;420;0" dur="4s" repeatCount="indefinite" />
     </rect>
@@ -93,14 +66,14 @@
 
   <!-- ======================== RIGHT SIDE (TERMINAL) ======================== -->
   <g transform="translate(500, 100)">
-    <rect width="620" height="420" rx="16" fill="#09090B" fill-opacity="0.8" stroke="rgba(255,255,255,0.06)" filter="url(#glass)" />
+    <rect width="620" height="420" rx="16" fill="#161B22" fill-opacity="0.9" stroke="#30363D" filter="url(#glass)" />
     
-    <!-- Terminal Header Dots (Monokrom stiline uygun gri/beyaz) -->
-    <circle cx="24" cy="24" r="5" fill="#52525B" />
-    <circle cx="44" cy="24" r="5" fill="#71717A" />
-    <circle cx="64" cy="24" r="5" fill="#A1A1AA" />
-    <text x="90" y="28" font-family="monospace" font-size="12" fill="#71717A">$ whoami | Generating profile...</text>
-    <line x1="0" y1="48" x2="620" y2="48" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+    <!-- Terminal Header Dots -->
+    <circle cx="24" cy="24" r="5" fill="#30363D" />
+    <circle cx="44" cy="24" r="5" fill="#8B949E" />
+    <circle cx="64" cy="24" r="5" fill="#C9D1D9" />
+    <text x="90" y="28" font-family="monospace" font-size="12" fill="#8B949E">$ whoami | Generating profile...</text>
+    <line x1="0" y1="48" x2="620" y2="48" stroke="#30363D" stroke-width="1" />
 
     <!-- Content Group -->
     <g transform="translate(40, 90)">
@@ -108,87 +81,61 @@
       <!-- Greeting -->
       <text x="0" y="20" font-family="sans-serif" font-weight="700" font-size="32" fill="#FFFFFF">Hi I'm Sinan</text>
       
-      <!-- Animated Typing Text -->
+      <!-- Fade-in Unvan -->
       <g transform="translate(0, 45)">
-        <text font-family="monospace" font-size="20" fill="#FFFFFF" clip-path="url(#typing-clip)">> Backend Engineer</text>
+        <text font-family="monospace" font-size="20" fill="#FFFFFF" opacity="0">> Backend Engineer
+          <animate attributeName="opacity" from="0" to="1" dur="1.5s" begin="0.5s" fill="freeze" />
+        </text>
         <rect x="220" y="5" width="10" height="20" fill="#FFFFFF">
           <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
         </rect>
       </g>
 
-      <!-- Sequential Details (Terminal Style) -->
-      <g font-family="monospace" font-size="14" fill="#71717A" transform="translate(0, 100)">
-        <text x="0" y="0" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.2;1" dur="4s" begin="0.5s" fill="freeze" />~/location <tspan fill="#FFFFFF">Hatay, Türkiye</tspan></text>
-        <text x="0" y="30" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.2;1" dur="4s" begin="1.0s" fill="freeze" />~/focus    <tspan fill="#FFFFFF">Backend Development</tspan></text>
-        <text x="0" y="60" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.2;1" dur="4s" begin="1.5s" fill="freeze" />~/system   <tspan fill="#FFFFFF">Fedora Linux</tspan></text>
-        <text x="0" y="90" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.2;1" dur="4s" begin="2.0s" fill="freeze" />~/linkedin <tspan fill="#FFFFFF">linkedin.com/in/msinansonmez</tspan></text>
-        <text x="0" y="120" opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.2;1" dur="4s" begin="2.5s" fill="freeze" />~/email    <tspan fill="#FFFFFF">msinansonmez10@gmail.com</tspan></text>
+      <!-- Terminal Details -->
+      <g font-family="monospace" font-size="14" fill="#8B949E" transform="translate(0, 100)">
+        <text x="0" y="0" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="1.5s" begin="0.8s" fill="freeze" />~/location <tspan fill="#C9D1D9">Hatay, Türkiye</tspan></text>
+        <text x="0" y="30" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="1.5s" begin="1.1s" fill="freeze" />~/focus    <tspan fill="#C9D1D9">Backend Development</tspan></text>
+        <text x="0" y="60" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="1.5s" begin="1.4s" fill="freeze" />~/system   <tspan fill="#C9D1D9">Fedora Linux</tspan></text>
+        <text x="0" y="90" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="1.5s" begin="1.7s" fill="freeze" />~/linkedin <tspan fill="#C9D1D9">linkedin.com/in/msinansonmez</tspan></text>
+        <text x="0" y="120" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="1.5s" begin="2.0s" fill="freeze" />~/email    <tspan fill="#C9D1D9">msinansonmez10@gmail.com</tspan></text>
       </g>
 
       <!-- Skills Section Header -->
-      <text x="0" y="260" font-family="monospace" font-size="12" fill="#52525B" text-transform="uppercase" letter-spacing="2">SKILLS</text>
+      <text x="0" y="260" font-family="monospace" font-size="12" fill="#8B949E" text-transform="uppercase" letter-spacing="2">SKILLS</text>
 
-      <!-- Skills Pills (Monokrom & 2 Satır) -->
+      <!-- Matematiksel Olarak Hesaplanmış Yetenek Baloncukları -->
       <g transform="translate(0, 275)">
         
         <!-- SATIR 1 -->
-        <!-- Python -->
-        <g transform="translate(0, 0)" cursor="pointer">
-          <rect width="80" height="32" rx="16" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.15)">
-             <set attributeName="stroke" to="#FFFFFF" begin="mouseover" end="mouseout"/>
-             <set attributeName="transform" to="scale(1.05)" begin="mouseover" end="mouseout"/>
-          </rect>
-          <text x="40" y="21" font-family="sans-serif" font-size="13" font-weight="600" fill="#E4E4E7" text-anchor="middle">Python</text>
+        <g transform="translate(0, 0)">
+          <rect width="75" height="32" rx="16" fill="rgba(255, 255, 255, 0.05)" stroke="#30363D"/>
+          <text x="37.5" y="21" font-family="sans-serif" font-size="13" font-weight="600" fill="#C9D1D9" text-anchor="middle">Python</text>
         </g>
-        <!-- Spring -->
-        <g transform="translate(90, 0)" cursor="pointer">
-          <rect width="80" height="32" rx="16" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.15)">
-             <set attributeName="stroke" to="#FFFFFF" begin="mouseover" end="mouseout"/>
-             <set attributeName="transform" to="scale(1.05)" begin="mouseover" end="mouseout"/>
-          </rect>
-          <text x="40" y="21" font-family="sans-serif" font-size="13" font-weight="600" fill="#E4E4E7" text-anchor="middle">Spring</text>
+        <g transform="translate(87, 0)">
+          <rect width="75" height="32" rx="16" fill="rgba(255, 255, 255, 0.05)" stroke="#30363D"/>
+          <text x="37.5" y="21" font-family="sans-serif" font-size="13" font-weight="600" fill="#C9D1D9" text-anchor="middle">Spring</text>
         </g>
-        <!-- NestJS -->
-        <g transform="translate(180, 0)" cursor="pointer">
-          <rect width="80" height="32" rx="16" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.15)">
-             <set attributeName="stroke" to="#FFFFFF" begin="mouseover" end="mouseout"/>
-             <set attributeName="transform" to="scale(1.05)" begin="mouseover" end="mouseout"/>
-          </rect>
-          <text x="40" y="21" font-family="sans-serif" font-size="13" font-weight="600" fill="#E4E4E7" text-anchor="middle">NestJS</text>
+        <g transform="translate(174, 0)">
+          <rect width="75" height="32" rx="16" fill="rgba(255, 255, 255, 0.05)" stroke="#30363D"/>
+          <text x="37.5" y="21" font-family="sans-serif" font-size="13" font-weight="600" fill="#C9D1D9" text-anchor="middle">NestJS</text>
         </g>
-        <!-- Docker -->
-        <g transform="translate(270, 0)" cursor="pointer">
-          <rect width="80" height="32" rx="16" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.15)">
-             <set attributeName="stroke" to="#FFFFFF" begin="mouseover" end="mouseout"/>
-             <set attributeName="transform" to="scale(1.05)" begin="mouseover" end="mouseout"/>
-          </rect>
-          <text x="40" y="21" font-family="sans-serif" font-size="13" font-weight="600" fill="#E4E4E7" text-anchor="middle">Docker</text>
+        <g transform="translate(261, 0)">
+          <rect width="75" height="32" rx="16" fill="rgba(255, 255, 255, 0.05)" stroke="#30363D"/>
+          <text x="37.5" y="21" font-family="sans-serif" font-size="13" font-weight="600" fill="#C9D1D9" text-anchor="middle">Docker</text>
         </g>
 
-        <!-- SATIR 2 -->
-        <!-- Git -->
-        <g transform="translate(0, 42)" cursor="pointer">
-          <rect width="60" height="32" rx="16" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.15)">
-             <set attributeName="stroke" to="#FFFFFF" begin="mouseover" end="mouseout"/>
-             <set attributeName="transform" to="scale(1.05)" begin="mouseover" end="mouseout"/>
-          </rect>
-          <text x="30" y="21" font-family="sans-serif" font-size="13" font-weight="600" fill="#E4E4E7" text-anchor="middle">Git</text>
+        <!-- SATIR 2 (Milimi milimine ortaya hizalandı) -->
+        <g transform="translate(74, 45)">
+          <rect width="55" height="32" rx="16" fill="rgba(255, 255, 255, 0.05)" stroke="#30363D"/>
+          <text x="27.5" y="21" font-family="sans-serif" font-size="13" font-weight="600" fill="#C9D1D9" text-anchor="middle">Git</text>
         </g>
-        <!-- C -->
-        <g transform="translate(70, 42)" cursor="pointer">
-          <rect width="50" height="32" rx="16" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.15)">
-             <set attributeName="stroke" to="#FFFFFF" begin="mouseover" end="mouseout"/>
-             <set attributeName="transform" to="scale(1.05)" begin="mouseover" end="mouseout"/>
-          </rect>
-          <text x="25" y="21" font-family="sans-serif" font-size="13" font-weight="600" fill="#E4E4E7" text-anchor="middle">C</text>
+        <g transform="translate(141, 45)">
+          <rect width="45" height="32" rx="16" fill="rgba(255, 255, 255, 0.05)" stroke="#30363D"/>
+          <text x="22.5" y="21" font-family="sans-serif" font-size="13" font-weight="600" fill="#C9D1D9" text-anchor="middle">C</text>
         </g>
-        <!-- Linux -->
-        <g transform="translate(130, 42)" cursor="pointer">
-          <rect width="70" height="32" rx="16" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.15)">
-             <set attributeName="stroke" to="#FFFFFF" begin="mouseover" end="mouseout"/>
-             <set attributeName="transform" to="scale(1.05)" begin="mouseover" end="mouseout"/>
-          </rect>
-          <text x="35" y="21" font-family="sans-serif" font-size="13" font-weight="600" fill="#E4E4E7" text-anchor="middle">Linux</text>
+        <g transform="translate(198, 45)">
+          <rect width="65" height="32" rx="16" fill="rgba(255, 255, 255, 0.05)" stroke="#30363D"/>
+          <text x="32.5" y="21" font-family="sans-serif" font-size="13" font-weight="600" fill="#C9D1D9" text-anchor="middle">Linux</text>
         </g>
       </g>
     </g>
