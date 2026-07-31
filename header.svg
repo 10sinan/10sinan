@@ -1,0 +1,51 @@
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .term-bg { fill: #0d1117; }
+      .term-border { fill: none; stroke: #39ff14; stroke-width: 2; }
+      .term-text { font-family: 'Courier New', monospace; fill: #39ff14; font-size: 22px; }
+      .term-prompt { font-family: 'Courier New', monospace; fill: #00d4ff; font-size: 22px; }
+      .term-dim { font-family: 'Courier New', monospace; fill: #6b7280; font-size: 14px; }
+      .dot { }
+    </style>
+  </defs>
+
+  <!-- Terminal arka planı -->
+  <rect class="term-bg" x="2" y="2" width="796" height="196" rx="10"/>
+  <rect class="term-border" x="2" y="2" width="796" height="196" rx="10"
+        stroke-dasharray="1990" stroke-dashoffset="1990">
+    <animate attributeName="stroke-dashoffset" from="1990" to="0" dur="1.6s" fill="freeze"/>
+  </rect>
+
+  <!-- Üst bar: pencere düğmeleri -->
+  <circle class="dot" cx="24" cy="24" r="6" fill="#ff5f56"/>
+  <circle class="dot" cx="46" cy="24" r="6" fill="#ffbd2e"/>
+  <circle class="dot" cx="68" cy="24" r="6" fill="#27c93f"/>
+  <text x="400" y="29" text-anchor="middle" class="term-dim">sinan@fedora: ~/profile</text>
+  <line x1="2" y1="42" x2="798" y2="42" stroke="#39ff14" stroke-width="1" opacity="0.4"/>
+
+  <!-- Komut satırı 1: yazı yazma efekti -->
+  <text x="30" y="90" class="term-prompt">$</text>
+  <text x="55" y="90" class="term-text">
+    <animate attributeName="opacity" from="0" to="1" begin="1.6s" dur="0.1s" fill="freeze"/>
+    whoami
+  </text>
+
+  <!-- Komut satırı 2: sonuç -->
+  <text x="30" y="130" class="term-text" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="2.4s" dur="0.1s" fill="freeze"/>
+    &gt; Sinan — Backend Engineer (Intern)
+  </text>
+
+  <!-- Komut satırı 3 -->
+  <text x="30" y="160" class="term-text" opacity="0" font-size="18">
+    <animate attributeName="opacity" from="0" to="1" begin="3.2s" dur="0.1s" fill="freeze"/>
+    &gt; Python · Spring · NestJS · Docker · Linux
+  </text>
+
+  <!-- Yanıp sönen imleç -->
+  <rect x="345" y="112" width="12" height="20" fill="#39ff14" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="3.2s" dur="0.1s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;0;1" dur="1s" begin="3.3s" repeatCount="indefinite"/>
+  </rect>
+</svg>
