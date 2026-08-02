@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="header.svg" alt="Sinan - Terminal Header" width="100%"/>
+  <img src="dark.svg" alt="Sinan - Terminal Header" width="100%"/>
 </div>
 
 <br/>
