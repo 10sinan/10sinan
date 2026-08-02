@@ -8,10 +8,10 @@
 
 Merhaba! Ben **Sinan**, Hatay/Türkiye merkezli bir **Backend Developer** stajyeriyim. Şu anda Fedora Linux üzerinde, VS Code + GitHub Copilot ile geliştirme yapıyorum.
 
-- 🔭 Şu an bir **MinIO S3 benchmark uygulaması** (Python ile depolama sistemi hız testi) üzerinde çalışıyorum
-- 🌱 Backend teknolojilerinde derinleşiyorum: Python, Spring, NestJS
-- 🎨 Geliştirici araçları (developer tooling) ve kişisel marka estetiğiyle (GitHub profili gibi) ilgileniyorum
-- 💬 Linux ve konteynerleştirme (containerization – uygulamaları izole kutularda çalıştırma, örn. Docker) hakkında konuşmaktan keyif alırım
+- Şu an bir **MinIO S3 benchmark uygulaması** (Python ile depolama sistemi hız testi) üzerinde çalışıyorum
+- Backend teknolojilerinde derinleşiyorum: Python, Spring, NestJS
+- Geliştirici araçları (developer tooling) ve kişisel marka estetiğiyle (GitHub profili gibi) ilgileniyorum
+- Linux ve konteynerleştirme (containerization – uygulamaları izole kutularda çalıştırma, örn. Docker) hakkında konuşmaktan keyif alırım
 
 <br/>
 
