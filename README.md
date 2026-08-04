@@ -6,7 +6,6 @@
   </picture>
 </div>
 <br/>
-leriyle birlikte) ekleyebilirsin. İstersen `[Proje Adı](repo-linki)` formatında gerçek linklerini paylaş, birlikte dolduralım.
 <br/>
 
 <div align="center">
